@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_3</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+    form{
+        margin-top: 4%;
+        width: 800px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    #name, #surname, #email, #password, #date{
+        width: 350px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid gray;
+        
+    }
+</style>
+<body>
+    <form>
+        <label for="name"></label>
+        <input type="text" name="name" placeholder="Ваше имя" id="name">
+        <label for="surname"></label>
+        <input type="text" name="surname" placeholder="Ваше фамилия" id="surname">
+        <label for="email">Ваше почта</label>
+        <input type="email" name="email" placeholder="example@gmail.com" id="email">
+        <label for="password">Придумайте пароль</label>
+        <input type="password" name="password" id="password">
+        <label for="agree">Я прочитал лицензионное соглашение</label>
+        <input type="checkbox" name="agree" id="agree">
+        <label for="date">Введите ваш день рождения</label>
+        <input type="date" name="date" id="date">
+        <label for="image">Заргрузите вашу аватарку</label>
+        <input type="file" name="image">
+    </form>
+</body>
+</html>
