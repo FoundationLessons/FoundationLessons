@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_6</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        margin-top: 8%;
+        width: 500px;
+        height: 600px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 6rem;
+    }
+    .round{
+        width: 70px;
+        height: 70px;
+        background-color: red;
+        font-size: xx-large;
+        border-radius: 50%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .firstRow, .secondRow{
+        width: 100%;
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .num{
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: xx-large;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="round">On</div>
+        <div class="firstRow">
+            <div class="num">1</div>
+            <div class="num">2</div>
+            <div class="num">3</div>
+        </div>
+        <div class="secondRow">
+            <div class="num">4</div>
+            <div class="num">5</div>
+            <div class="num">6</div>
+        </div>
+        <div class="thirdRow">
+            <div class="num">0</div>
+        </div>
+    </div>
+</body>
+</html>
