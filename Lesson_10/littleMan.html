@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson_10</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      width: 700px;
+      height: 700px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 8%;
+    }
+    .head {
+      width: 111px;
+      height: 111px;
+      border-radius: 50%;
+      background-color: gray;
+    }
+    .body {
+      width: 115px;
+      height: 187px;
+      background-color: gray;
+      position: relative;
+      top: 30px;
+    }
+    .leftHand {
+      width: 32px;
+      height: 210px;
+      background-color: gray;
+      position: relative;
+      right: 80px;
+      transform: rotate(20deg);
+    }
+    .rightShoulder {
+      width: 32px;
+      height: 88px;
+      background-color: gray;
+      transform: rotate(78.579deg);
+      position: relative;
+      left: 160px;
+      bottom: 250px;
+    }
+    .rightHand {
+      width: 32px;
+      height: 116px;
+      background-color: gray;
+      position: relative;
+      bottom: 420px;
+      left: 240px;
+      transform: rotate(6.159deg);
+    }
+    .leftLeg {
+      width: 49px;
+      height: 210px;
+      background-color: gray;
+      transform: rotate(3.006deg);
+      position: relative;
+      bottom: 200px;
+    }
+    .rightLeg {
+      width: 49px;
+      height: 210px;
+      background-color: gray;
+      transform: rotate(-5.998deg);
+      position: relative;
+      left: 80px;
+      bottom: 413px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="head"></div>
+      <div class="body">
+        <div class="leftHand"></div>
+        <div class="rightShoulder"></div>
+        <div class="rightHand"></div>
+        <div class="leftLeg"></div>
+        <div class="rightLeg"></div>
+      </div>
+    </div>
+  </body>
+</html>
