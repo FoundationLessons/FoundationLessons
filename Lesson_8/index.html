@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson_8</title>
+  </head>
+  <style>
+    .container {
+      padding: 15px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .tegs {
+      display: flex;
+      gap: 30px;
+      font-weight: bold;
+      font-size: 25px;
+    }
+
+    .tegs button {
+      margin-top: 20px;
+      text-align: center;
+      padding: 10px;
+      color: aqua;
+      border: 1px solid aqua;
+      border-radius: 6px;
+      width: 70px;
+      height: 35px;
+    }
+
+    .container2 {
+      border: 1px solid gray;
+      border-radius: 1%;
+
+      width: 350px;
+      height: 320px;
+      background-color: white;
+      margin-top: 15px;
+    }
+
+    .head {
+      border: 1px solid gray;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    .body {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .body button {
+      width: 250px;
+      height: 50px;
+      border-radius: 10px;
+      margin: 30px;
+      background-color: cyan;
+      font-size: 20px;
+      color: white;
+      border: none;
+    }
+
+    .cards {
+      display: flex;
+      gap: 40px;
+      justify-content: center;
+    }
+
+    .about {
+      color: gray;
+    }
+
+    .pricing {
+      text-align: center;
+    }
+
+    .price p {
+      font-size: 40px;
+      font-family: sans-serif;
+    }
+
+    #first {
+      width: 250px;
+      height: 50px;
+      border-radius: 10px;
+      border: 1px solid aqua;
+      margin: 30px;
+      background-color: white;
+      font-size: 20px;
+      color: aqua;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="shar">
+          <p>Company name</p>
+        </div>
+        <div class="tegs">
+          <p>Features</p>
+          <p>Enterprise</p>
+          <p>Support</p>
+          <p>Pricing</p>
+          <button>Sign up</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing">
+      <div class="price">
+        <p>Pricing</p>
+      </div>
+      <div class="about">
+        <p>
+          Quickly build an effective pricing table for yout potential customers
+          with this <br />
+          Bootstrap example. It's built with <br />
+          default Bootstrap components and utilities with little customization.
+        </p>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="container2">
+        <div class="head">
+          <p>Free</p>
+        </div>
+        <div class="body">
+          <p>
+            <span style="font-size: 30px; color: black; font-weight: bold"
+              >0$</span
+            >
+            <span style="color: gray; font-size: 25px">/ mo</span><br />
+            10 users included <br />
+            2GB of storage <br />
+            Priority email support <br />
+            Help center access
+          </p>
+          <button id="first">Sign up for free</button>
+        </div>
+      </div>
+
+      <div class="container2">
+        <div class="head">
+          <p>Pro</p>
+        </div>
+        <div class="body">
+          <p>
+            <span style="font-size: 30px; color: black; font-weight: bold"
+              >15$</span
+            >
+            <span style="color: gray; font-size: 25px">/ mo</span><br />
+            20 users included <br />
+            10GB of storage <br />
+            Priority email support <br />
+            Help center access
+          </p>
+          <button>Get started</button>
+        </div>
+      </div>
+
+      <div class="container2">
+        <div class="head">
+          <p>Enterprise</p>
+        </div>
+        <div class="body">
+          <p>
+            <span style="font-size: 30px; color: black; font-weight: bold"
+              >29$</span
+            >
+            <span style="color: gray; font-size: 25px">/ mo</span><br />
+            30 users included <br />
+            15GB of storage <br />
+            Priority email support <br />
+            Help center access
+          </p>
+          <button>Contact us</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
