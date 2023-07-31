@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson_10</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: yellow;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .stick {
+      width: 50px;
+      height: 270px;
+      background-color: #ae865a;
+      border-radius: 50px;
+      opacity: 0.9;
+    }
+
+    .icecream {
+      width: 200px;
+      height: 300px;
+      background-color: rgb(171, 106, 148);
+      position: relative;
+      left: -75px;
+      top: -100px;
+      border-radius: 100px 100px 20px 20px;
+      z-index: 1;
+    }
+
+    .eye1 {
+      width: 20px;
+      height: 20px;
+      background-color: rgb(229, 61, 148);
+      border-radius: 50%;
+      position: relative;
+      top: 170px;
+      left: 20px;
+      z-index: 1;
+    }
+    .eye2 {
+      width: 20px;
+      height: 20px;
+      background-color: rgb(229, 61, 148);
+      border-radius: 50%;
+      position: relative;
+      top: 150px;
+      left: 160px;
+      z-index: 1;
+    }
+    .iris1 {
+      width: 5px;
+      height: 5px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+      top: 5px;
+      left: 6px;
+      z-index: 1;
+    }
+    .iris2 {
+      width: 5px;
+      height: 5px;
+      background-color: white;
+      border-radius: 50%;
+      position: relative;
+      top: 5px;
+      left: 6px;
+      z-index: 1;
+    }
+    .mouth {
+      width: 70px;
+      height: 25px;
+      background-color: rgb(229, 61, 148);
+      border-radius: 20px 20px 100px 100px;
+      position: relative;
+      top: 155px;
+      left: 65px;
+      z-index: 1;
+    }
+    .shadow {
+      width: 50px;
+      height: 25px;
+      background-color: pink;
+      opacity: 0.7;
+      border-radius: 50%;
+      position: relative;
+      top: 50px;
+      left: 130px;
+      transform: rotate(50deg);
+      z-index: 1;
+    }
+  </style>
+  <body>
+    <div class="stick">
+      <div class="icecream">
+        <div class="shadow"></div>
+        <div class="eye1">
+          <div class="iris1"></div>
+        </div>
+        <div class="eye2">
+          <div class="iris2"></div>
+        </div>
+        <div class="mouth"></div>
+      </div>
+    </div>
+  </body>
+</html>
