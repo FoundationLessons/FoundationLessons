@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_11</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        width: 150px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: gray;
+        position: relative;
+    }
+    .box:hover{
+        background-color: red;
+    }
+    .box::before{
+        content: 'Hover me!';
+    }
+    .box:hover::before{
+        content: "Go away!";
+    }
+    
+</style>
+<body>
+    <div class="box"></div>
+</body>
+</html>
