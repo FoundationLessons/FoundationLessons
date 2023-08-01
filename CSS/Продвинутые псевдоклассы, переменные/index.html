@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson_15</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      margin-top: 8%;
+      width: 640px;
+      height: 600px;
+      background-color: lightgrey;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .firstRow, .secondRow, .thirdRow {
+      width: 100%;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .box:first-child {
+      width: 200px;
+      height: 100%;
+      background-color: white;
+    }
+    .box:nth-child(2) {
+      width: 200px;
+      height: 100%;
+      background-color: red;
+    }
+    .box:nth-child(3) {
+      width: 200px;
+      height: 100%;
+      background-color: chocolate;
+    }
+    .secondRow>.box:first-child {
+      width: 200px;
+      height: 100%;
+      background-color: yellow;
+    }
+    .secondRow>.box:nth-child(2) {
+      width: 200px;
+      height: 100%;
+      background-color: green;
+    }
+    .secondRow>.box:nth-child(3) {
+      width: 200px;
+      height: 100%;
+      background-color: aqua;
+    }
+    .thirdRow>.box:first-child {
+      width: 200px;
+      height: 100%;
+      background-color: blue;
+    }
+    .thirdRow>.box:nth-child(2) {
+      width: 200px;
+      height: 100%;
+      background-color: rebeccapurple;
+    }
+    .thirdRow>.box:nth-child(3) {
+      width: 200px;
+      height: 100%;
+      background-color: purple;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="firstRow">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="secondRow">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="thirdRow">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+  </body>
+</html>
