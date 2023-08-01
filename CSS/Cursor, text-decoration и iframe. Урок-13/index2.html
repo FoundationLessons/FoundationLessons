@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson_13</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      margin-top: 8%;
+      width: 700px;
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container > img {
+      width: 80px;
+      height: 80px;
+    }
+    .container > h1 {
+      margin-top: 40px;
+      font-family: sans-serif;
+      font-weight: 400;
+    }
+    .container > form {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    #email,
+    #password {
+      width: 600px;
+      height: 70px;
+      border: 2px solid rgb(185, 184, 184);
+      padding: 1rem;
+      color: rgb(185, 184, 184);
+      font-size: large;
+      border-radius: 10px;
+    }
+    .container > form > p {
+      color: rgb(185, 184, 184);
+    }
+    #button {
+      width: 600px;
+      height: 70px;
+      background-color: dodgerblue;
+      border-radius: 10px;
+      text-align: center;
+      color: white;
+      border: none;
+      font-size: x-large;
+    }
+    .container > p {
+      margin-top: 40px;
+      color: rgb(185, 184, 184);
+      font-size: large;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <img src="./bootstrap-solid.svg" alt="/" />
+      <h1>Floating Labels</h1>
+      <form>
+        <input type="email" id="email" placeholder="Email address" />
+        <input type="password" id="password" placeholder="Password" />
+        <p><input type="checkbox" id="checkbox" />Remember me</p>
+        <button id="button">Sign in</button>
+      </form>
+      <p>ⓒ 2017-2018</p>
+    </div>
+  </body>
+</html>
