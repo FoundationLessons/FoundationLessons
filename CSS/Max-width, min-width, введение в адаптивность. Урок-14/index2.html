@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson_14</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+        padding: 10px;
+    }
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+    .navbar {
+      width: 100%;
+      height: 100px;
+      border-radius: 10px;
+      background-color: rebeccapurple;
+      display: flex;
+      flex-direction: row;
+      padding: 1rem;
+      gap: 15px;
+      align-items: center;
+    }
+    .navbar > img {
+      width: 60px;
+      height: 60px;
+      border: 2px solid white;
+      border-radius: 10px;
+    }
+    .textSection {
+      width: 200px;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+      justify-content: center;
+    }
+    .textSection > h2 {
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      color: white;
+    }
+    .textSection > p {
+      color: #cacaca;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .recentUpdates,
+    .suggestions {
+      width: 100%;
+      height: 390px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .recentUpdates > h2,
+    .suggestions > h2 {
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      color: #191919;
+    }
+    .recentUpdates > hr,
+    .suggestions > hr {
+      margin-top: 15px;
+    }
+    .recentUpdates > a,
+    .suggestions > a {
+      margin-top: 10px;
+      text-align: right;
+      text-decoration: none;
+      color: cornflowerblue;
+    }
+    .row {
+      margin-top: 20px;
+      width: 100%;
+      height: 70px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+    .rectangle {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: cornflowerblue;
+    }
+    .rectangle2 {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: purple;
+    }
+    .rectangle3 {
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      background-color: rebeccapurple;
+    }
+    .text-Section {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .text-Section > h3,
+    .textArea > h3 {
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+      color: gray;
+    }
+    .text-Section > p,
+    .textArea > p {
+      font-family: "Times New Roman", Times, serif;
+      color: #cacaca;
+    }
+    .text-Section > hr {
+      margin-top: 10px;
+    }
+    .suggestionRow {
+      margin-top: 20px;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+    }
+    .textArea {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 7px;
+    }
+    .suggestionRow > a {
+      text-align: left;
+      text-decoration: none;
+      color: cornflowerblue;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img src="./bootstrap-solid.svg" alt="/" />
+        <div class="textSection">
+          <h2>Bootstrap</h2>
+          <p>Since 2011</p>
+        </div>
+      </div>
+      <div class="recentUpdates">
+        <h2>Recent updates</h2>
+        <hr />
+        <div class="row">
+          <div class="rectangle"></div>
+          <div class="text-Section">
+            <h3>@username</h3>
+            <p>
+              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+              tellus as cursus commodo, tortor mauris condimentum nibh, ur
+              fermentum massa justo sit amet risus.
+            </p>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="rectangle2"></div>
+          <div class="text-Section">
+            <h3>@username</h3>
+            <p>
+              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+              tellus as cursus commodo, tortor mauris condimentum nibh, ur
+              fermentum massa justo sit amet risus.
+            </p>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="rectangle3"></div>
+          <div class="text-Section">
+            <h3>@username</h3>
+            <p>
+              Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+              tellus as cursus commodo, tortor mauris condimentum nibh, ur
+              fermentum massa justo sit amet risus.
+            </p>
+            <hr />
+          </div>
+        </div>
+        <a href="#">All updates</a>
+      </div>
+      <div class="suggestions">
+        <h2>Suggestions</h2>
+        <hr />
+        <div class="suggestionRow">
+          <div class="rectangle"></div>
+          <div class="textArea">
+            <h3>Full Name</h3>
+            <p>@username</p>
+            <hr />
+          </div>
+          <a href="#">Follow</a>
+        </div>
+        <div class="suggestionRow">
+          <div class="rectangle"></div>
+          <div class="textArea">
+            <h3>Full Name</h3>
+            <p>@username</p>
+            <hr />
+          </div>
+          <a href="#">Follow</a>
+        </div>
+        <div class="suggestionRow">
+          <div class="rectangle"></div>
+          <div class="textArea">
+            <h3>Full Name</h3>
+            <p>@username</p>
+            <hr />
+          </div>
+          <a href="#">Follow</a>
+        </div>
+        <a href="#">All suggestions</a>
+      </div>
+    </div>
+  </body>
+</html>
