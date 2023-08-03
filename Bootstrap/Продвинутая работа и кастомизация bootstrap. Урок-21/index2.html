@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson_21</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <style>
+    body {
+      background-color: rgb(36, 27, 82);
+    }
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-brand > a > img {
+      width: 70px;
+      height: 70px;
+    }
+    .navbar-brand > span {
+      position: relative;
+      left: 20px;
+      font-weight: 700;
+      color: white;
+    }
+    .navbar {
+      background-color: rgb(36, 27, 82);
+    }
+    .image276 {
+      width: 25px;
+      height: 25px;
+    }
+    #toggleBtn {
+      width: 30px;
+      height: 30px;
+      font-size: 0.75rem;
+    }
+    .navbar-nav {
+      display: flex;
+      align-items: center;
+    }
+    .navbar-nav > section {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+    }
+    .navbar-nav > section > button {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+    .navbar-nav > section > button > img {
+      width: 25px;
+      height: 25px;
+    }
+    .container > h1 {
+      margin-top: 120px;
+      font-size: 70px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .container > p {
+      font-size: 23px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      color: #cacaca;
+    }
+  </style>
+  <body>
+    <div class="container w-100 h-100 p-3">
+      <nav class="navbar navbar-expand-lg navbar-light font-weight-bolder">
+        <a class="navbar-brand" href="#"
+          ><img src="./Frame.svg" alt="/" /><span>Around</span></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-success"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Landings
+              </a>
+              <div
+                class="dropdown-menu bg-secondary border-white"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item text-white" href="#">Web Design</a>
+                <a class="dropdown-item text-white" href="#">Graphic Design</a>
+                <a class="dropdown-item text-white" href="#"
+                  >Digital Marketing</a
+                >
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+              <div
+                class="dropdown-menu bg-secondary border-white"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item text-white" href="#">Web Design</a>
+                <a class="dropdown-item text-white" href="#">Graphic Design</a>
+                <a class="dropdown-item text-white" href="#"
+                  >Digital Marketing</a
+                >
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Account
+              </a>
+              <div
+                class="dropdown-menu bg-secondary border-white"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item text-white" href="#">Sign In</a>
+                <a class="dropdown-item text-white" href="#">Sign Out</a>
+                <a class="dropdown-item text-white" href="#"
+                  >Account Settings</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">UI Kit</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Docs</a>
+            </li>
+            <section class="p-2 flex-row align-items-center">
+              <img class="image276" src="./image 277.png" alt="./" />
+              <button
+                type="button"
+                class="btn btn-secondary"
+                id="toggleBtn"
+                onclick="toggleButton()"
+              >
+                Off
+              </button>
+              <img class="image276" src="./image 276.png" alt="./" />
+              <button class="p-2 bg-primary text-white border-0 rounded-lg">
+                <img src="./image 275.png" alt="/" />Buy now
+              </button>
+            </section>
+          </ul>
+        </div>
+      </nav>
+
+      <h1 class="fs-3 text-white text-center">
+        Have a look<span class="font-weight-bold">
+          Ar<img
+            style="width: 55px; height: 55px"
+            src="./avatar.png"
+            alt="/"
+          />und!</span
+        >
+      </h1>
+      <p class="text-center mt-3">
+        And you will find everything you need to build a great looking website
+      </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      function toggleButton() {
+        var button = document.getElementById("toggleBtn");
+
+        if (button.innerHTML === "Off") {
+          button.innerHTML = "On";
+          button.classList.remove("btn-secondary");
+          button.classList.add("btn-primary");
+        } else {
+          button.innerHTML = "Off";
+          button.classList.remove("btn-primary");
+          button.classList.add("btn-secondary");
+        }
+      }
+    </script>
+  </body>
+</html>
