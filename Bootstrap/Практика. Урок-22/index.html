@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Bootstrap Navbar with justify-content: space-between;</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<style>
+    .navbar-nav{
+        display: flex;
+        gap: 12px;
+    }
+    #second{
+        display: flex;
+        align-items: center;
+       
+    }
+    #freeText{
+        font-size: x-large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #cardDiv{
+        border: 2px solid lightgrey;
+        border-radius: 5px;
+    }
+    .btn-white, .btn-primary{
+        color: #0275d8;
+        width: 100%;
+        height: 55px;
+        
+    }
+    .btn-white:hover{
+        background-color:#0056b3;
+    }
+    #cardContainer{
+        margin-top: 80px;
+        justify-content: space-evenly;
+    }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container p-3">
+      <a class="navbar-brand" href="#">Company name</a>
+      <div class="d-flex justify-content-between">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Enterprise</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav" id="second">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <button class="bg-white border-primary rounded-lg flex-row align-items-center text-center text-primary">Sign up</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container d-flex flex-column justify-content-center align-items-center">
+    <h1 class="text-center mt-5 ">Pricing</h1>
+    <p class="text-center mt-3 text-black-50 w-50 h-50">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+    <div class="container d-flex flex-row" id="cardContainer">
+        <div class="w-25 h-50 bg-light" id="cardDiv">
+            <p class="text-center p-2" id="freeText">Free</p>
+            <hr>
+            <h1 class="text-center">$0<span class="text-secondary">/ mo</span></h1>
+        <div class="container text-center p-3">
+                <p>10 users included</p>
+                <p>2 GB of storage</p>
+                <p>Email support</p>
+                <p>Help center access</p>
+                <button type="button" class="p-2 btn btn-white border-primary rounded-lg text-primary">Sign up for free</button>
+        </div>
+        </div>
+        <div class="w-25 h-50 bg-light" id="cardDiv">
+            <p class="text-center p-2" id="freeText">Pro</p>
+            <hr>
+            <h1 class="text-center">$15<span class="text-secondary">/ mo</span></h1>
+        <div class="container text-center p-3">
+                <p>20 users included</p>
+                <p>10 GB of storage</p>
+                <p>Priority email support</p>
+                <p>Help center access</p>
+                <button type="button" class="p-2 btn btn-primary border-primary rounded-lg text-white">Sign up for free</button>
+        </div>
+        </div>
+        <div class="w-25 h-50 bg-light" id="cardDiv">
+            <p class="text-center p-2" id="freeText">Enterprise</p>
+            <hr>
+            <h1 class="text-center">$29<span class="text-secondary">/ mo</span></h1>
+        <div class="container text-center p-3">
+                <p>30 users included</p>
+                <p>15 GB of storage</p>
+                <p>Phone and email support</p>
+                <p>Help center access</p>
+                <button type="button" class="p-2 btn btn-primary border-primary rounded-lg text-white">Sign up for free</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
