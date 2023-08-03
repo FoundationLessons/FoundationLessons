@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson_23</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    #solid {
+      width: 100%;
+      height: 60vh;
+      background-image: url("./bg-img.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
+      position: relative;
+      bottom: 40px;
+    }
+
+    .col {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    #heading {
+      font-size: 40px;
+      color: white;
+      font-weight: 700;
+    }
+
+    #paragraph {
+      color: white;
+      font-weight: 400;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    #btn1 {
+      background-color: green;
+      color: white;
+      font-size: 17px;
+      font-weight: bolder;
+    }
+
+    #btn1:hover {
+      background-color: green;
+      opacity: 0.887;
+      color: white;
+    }
+
+    #btn2 {
+      color: white;
+      font-size: 17px;
+      font-weight: bolder;
+    }
+
+    #btn2:hover {
+      background-color: white;
+      color: black;
+    }
+
+    #secondary {
+      display: flex;
+      justify-content: center;
+      text-align: left;
+      gap: 30px;
+    }
+
+    #secondary > p:first-child {
+      font-size: x-large;
+      font-weight: 700;
+      color: #252525;
+    }
+
+    #secondary > p:nth-child(2) {
+      font-size: 19px;
+      font-weight: 400;
+      color: #252525;
+    }
+    #drop-btn {
+      color: white;
+      border: 1px solid white;
+    }
+
+    #drop-btn:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+  <body>
+    <div class="container" id="solid">
+      <p
+        class="fs-6 fw-bolder"
+        style="
+          color: white;
+          position: relative;
+          top: 20px;
+          cursor: pointer;
+          font-size: large;
+          font-weight: 700;
+        "
+      >
+        Robust.
+      </p>
+
+      <div class="navbar">
+        <p
+          class="fs-6 fw-medium"
+          style="color: white; position: relative; top: 8px; cursor: pointer"
+        >
+          Overview
+        </p>
+
+        <div class="dropdown">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="color: lightgray"
+          >
+            Pages
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Landing</a></li>
+            <li><a class="dropdown-item" href="#">Dashboard</a></li>
+            <li><a class="dropdown-item" href="#">General</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="color: lightgray"
+          >
+            Components
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+            <li><a class="dropdown-item" href="#">Robust</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            style="color: lightgray"
+          >
+            Docs
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Introduction</a></li>
+            <li><a class="dropdown-item" href="#">Quick start</a></li>
+            <li><a class="dropdown-item" href="#">Build tools</a></li>
+            <li><a class="dropdown-item" href="#">Contents</a></li>
+            <li><a class="dropdown-item" href="#">Changelog</a></li>
+          </ul>
+          <button class="btn p-2" id="drop-btn">Purchase Now</button>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <p class="fs-1" id="heading">ROBUST UI Kit</p>
+          <p class="fs-5" id="paragraph">
+            Robust is a premium theme built with Bootstrap. <br />
+            The theme is fully customizable & can be used for any type of <br />
+            application.
+          </p>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="btn p-2" id="btn1">Get Started</button>
+        <button class="btn p-2" style="border: 1px solid white" id="btn2">
+          Components
+        </button>
+      </div>
+    </div>
+
+    <div class="container mt-5" id="secondary">
+      <p class="fs-2 fw-bolder">
+        Discover our <br />
+        landing, app & blog <br />
+        pages
+      </p>
+
+      <p class="fs-5 fw-medium">
+        Robust includes various demo pages for building <br />
+        your custom app, blog or landing page. All code is <br />
+        handwritten, all our components are optimized for <br />
+        desktop, tablet and mobile.
+      </p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
