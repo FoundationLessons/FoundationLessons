@@ -6,7 +6,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 var greenIcon = L.icon({
-  iconUrl: "leaf-green.png",
+  iconUrl: "./Images/leaf-green.png",
   shadowUrl: "leaf-shadow.png",
 
   iconSize: [38, 95], // size of the icon
@@ -17,7 +17,7 @@ var greenIcon = L.icon({
 });
 
 var orangeIcon = L.icon({
-  iconUrl: "leaf-orange.png",
+  iconUrl: "./Images/leaf-orange.png",
   shadowUrl: "leaf-shadow.png",
 
   iconSize: [38, 95], // size of the icon
@@ -28,7 +28,7 @@ var orangeIcon = L.icon({
 });
 
 var redIcon = L.icon({
-  iconUrl: "leaf-red.png",
+  iconUrl: "./Images/leaf-red.png",
   shadowUrl: "leaf-shadow.png",
 
   iconSize: [38, 95], // size of the icon
