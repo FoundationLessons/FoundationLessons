@@ -35,7 +35,7 @@ const MyNavbar = () => {
             <NavLink className="NavLink" href="/tranding">Tranding</NavLink>
           </NavItem>
           <NavItem className="last">
-            <NavLink href="/contact"><img src={searchIcon} alt="/" /></NavLink>
+            <NavLink href="/contact"><img src={searchIcon} style={{width:'20px', height:'20px'}} alt="/" /></NavLink>
           </NavItem>
         </Nav>
       </Navbar>
