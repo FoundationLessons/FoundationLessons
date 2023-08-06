@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainNav{
+    background-color: rgb(21, 85, 85);
+}
+.nav-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+.NavLink{
+    color: white;
+}
