@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+#span {
+  color: chocolate;
+  font-weight: bold;
+  font-size: 1.2rem;
+  font-family: "Jost", sans-serif;
+}
+.layout-container {
+  width: 100%;
+  height: 200vh;
+}
+
+.layout-main-frame {
+  width: 100%;
+  height: 632px;
+  background: #e7816b;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 2rem;
+
+}
+
+.layout-left-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.layout-left-content > h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+}
+
+.layout-left-content > p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-top: 50px;
+}
+.layout-left-content > button {
+  width: 152px;
+  height: 56px;
+  background: #ffffff;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-family: "Jost", sans-serif;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333136;
+  margin-top: 20px;
+}
+
+.right-oval {
+  width: 640px;
+  height: 640px;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 2, 2, 0.0001) 0%,
+    rgba(93, 2, 2, 0.497569) 100%
+  );
+  mix-blend-mode: normal;
+  opacity: 0.31;
+  transform: matrix(0, -1, -1, 0, 0, 0);
+  border-radius: 50%;
+}
+
+.layout-right-content {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  flex-grow: none;
+}
+
+.layout-right-phone {
+  width: 284px;
+  height: 573px;
+  opacity: 0.9;
+}
+
+.layout-right-phone >img{
+    position: relative;
+    right: 155%;
+    top: 99px;
+}
+
+.layout-main-links {
+  width: 100%;
+  height: 640px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.web-design {
+  width: 541px;
+  height: 640px;
+  border-radius: 15px;
+  background-color: #0000;
+  mix-blend-mode: normal;
+  background-image: url("../../containers/HomePage/container/img2.svg");
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.web-design > h1,
+.graphic-design > h1,
+.app-design > h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.web-design > p,
+.graphic-design > p,
+.app-design > p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.secondary-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.app-design,
+.graphic-design {
+  width: 541px;
+  height: 400px;
+  border-radius: 15px;
+  background-color: #0000;
+  mix-blend-mode: normal;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.app-design {
+  background-image: url("../../containers/HomePage/container/img3.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.graphic-design {
+  background-image: url("../../containers/HomePage/container/img4.svg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  top: 59px;
+}
+
+.layout-infos {
+  width: 100%;
+  height: 500px;
+  padding: 0;
+  align-items: center;
+  display: flex;
+}
+
+.layout-cards {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: left;
+}
+
+.card1,
+.card2,
+.card3 {
+  width: 350px;
+  height: 202px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.card1 > h1,
+.card2 > h1,
+.card3 > h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #333136;
+  text-transform: uppercase;
+}
+
+.card1 > p,
+.card2 > p,
+.card3 > p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #333136;
+  text-align: center;
+}
+
+.layout-about-project {
+  width: 75%;
+  height: 292px;
+  background: #e7816b;
+  border-radius: 15px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  left: 14%;
+}
+
+.left-project-text > h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.left-project-text > p {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.left-project-text {
+  width: 459px;
+  height: 174px;
+  padding: 0;
+}
+
+.right-project-btn {
+  width: 152px;
+  height: 56px;
+}
+
+.right-project-btn > button {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  background-color: white;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 8px;
+}

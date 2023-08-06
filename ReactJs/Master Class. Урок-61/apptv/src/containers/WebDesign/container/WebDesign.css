@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.web-design-container {
+  width: 100%;
+  height: 151vh;
+  display: flex;
+  flex-direction: column;
+  gap: none;
+}
+
+.main-title {
+  width: 100%;
+  height: 252px;
+  background: #e7816b;
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.main-title > h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-title > p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.cards,
+.cards2 {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 1rem;
+}
+
+.cards {
+  margin-top: 150px;
+}
+
+.card-place {
+  width: 350px;
+  height: 478px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img > img {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card-text {
+  width: 350px;
+  height: 150px;
+  border-radius: 0px 0px 20px 20px;
+  background: #fdf3f0;
+  position: relative;
+  bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  transition: 0.5s ease;
+}
+
+.card-text > h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #e7816b;
+  text-transform: uppercase;
+  transform: scale(1);
+}
+
+.card-text > p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #333136;
+  overflow: visible;
+}
+
+.card-text::before:hover{
+  background-color: #e7816b;
+  cursor: pointer;
+  color: white;
+}
+
+.web-main-links {
+  width: 100%;
+  height: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 10rem;
+}
+
+.web-link-left,
+.web-link-img-0 {
+  width: 541px;
+  height: 640px;
+}
+
+.web-link-img-1,
+.web-link-img-2 {
+  border-radius: 15px;
+  width: 541px;
+  height: 308px;
+}
+
+.web-link-img-0 {
+  background-image: url("./img2.svg");
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.web-link-img-1 {
+  background-image: url("./img3.svg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.web-link-right {
+  width: 541px;
+  height: 640px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.web-link-img-2 {
+  background-image: url("./img4.svg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.web-link-img-0 > h1,
+.web-link-img-1 > h1,
+.web-link-img-2 > h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.web-link-img-0 > p,
+.web-link-img-1 > p,
+.web-link-img-2 > p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.web-about-project {
+  margin-top: 15rem;
+  width: 80%;
+  height: 300px;
+  background: #e7816b;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 95px;
+  position: relative;
+  left: 14%;
+}
+
+.web-about-text {
+  width: 250px;
+  height: 98px;
+}
+
+.web-about-text-p {
+  width: 459px;
+  height: 52px;
+}
+
+.web-about-text > h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.web-about-text-p > p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  text-align: left;
+}

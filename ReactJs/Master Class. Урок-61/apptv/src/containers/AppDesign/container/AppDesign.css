@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.app-design-container {
+  width: 100%;
+  height: 160vh;
+}
+.container {
+  width: 100%;
+  height: 200%;
+}
+.app-main-title {
+  width: 100%;
+  height: 300px;
+  background: #e7816b;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.app-main-title > h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.app-main-title > p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.app-card-handler {
+  margin-top: 10rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.app-card-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex: 3;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+}
+.app-cards {
+  width: 350px;
+  height: 320px;
+  background: #2e3947;
+  border-radius: 15px 15px 0px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#card-2 {
+  background: #34b7a2;
+  border-radius: 15px 15px 0px 0px;
+}
+#card-3 {
+  background: #3f2f83;
+  border-radius: 15px 15px 0px 0px;
+}
+#card-4 {
+  background: #40125a;
+  border-radius: 15px 15px 0px 0px;
+}
+#card-5 {
+  background: #853a4d;
+  border-radius: 15px 15px 0px 0px;
+}
+.app-cards > img {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  top: 10px;
+}
+
+.app-card-text {
+  width: 350px;
+  height: 150px;
+  background: #fdf3f0;
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.app-card-title {
+  width: 286px;
+  height: 26px;
+}
+
+.app-card-p {
+  width: 286px;
+  height: 52px;
+}
+
+.app-card-title > h1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #e7816b;
+  text-transform: uppercase;
+}
+
+.app-card-title > p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #333136;
+}
+
+#lower-links {
+  position: relative;
+  bottom: 100px;
+}
+
+.app-about-last {
+  position: absolute;
+  bottom: 20rem;
+}
+
+.app-main-links {
+  width: 100%;
+  height: 640px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 5rem;
+}
+
+.app-link-left,
+.app-link-img-0 {
+  width: 541px;
+  height: 640px;
+}
+
+.app-link-img-1,
+.app-link-img-2 {
+  border-radius: 15px;
+  width: 541px;
+  height: 308px;
+}
+
+.app-link-img-0 {
+  background-image: url("./img2.svg");
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.app-link-img-1 {
+  background-image: url("./img3.svg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.app-link-right {
+  width: 541px;
+  height: 640px;
+  gap: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-link-img-2 {
+  background-image: url("./img4.svg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.app-link-img-0 > h1,
+.app-link-img-1 > h1,
+.app-link-img-2 > h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.app-link-img-0 > p,
+.app-link-img-1 > p,
+.app-link-img-2 > p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.app-about-project {
+  margin-top: 22rem;
+  width: 80%;
+  height: 300px;
+  background: #e7816b;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 95px;
+  position: relative;
+  left: 14%;
+  justify-content: space-between;
+}
+
+.app-about-text {
+  width: 250px;
+  height: 98px;
+}
+
+.app-about-text-p {
+  width: 459px;
+  height: 52px;
+}
+
+.app-about-text > h1 {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.app-about-text-p > p {
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+  text-align: left;
+}
+
+#app-btn {
+  width: 152px;
+  height: 56px;
+  border-radius: 8px;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #333136;
+  cursor: pointer;
+}
